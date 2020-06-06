@@ -11,6 +11,12 @@ Vue.use(VueRouter)
     component: Home
   },
   {
+    path: '/profile',
+    name: 'Profile',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Profile.vue')
+    
+  },
+  {
     path: '/about',
     name: 'About',
     // route level code-splitting
